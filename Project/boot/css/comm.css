@@ -53,3 +53,80 @@
     padding-left: 8rem !important;
     padding-right: 8rem !important;
 }
+/*背景图*/
+.img_960{
+    height:500px;
+    background-image:url("../k1/courier_app1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/* .img_125_1{
+    height:56px;
+    background-image:url("../k1/sz_bg_service_01.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.img_125_2{
+    height:56px;
+    background-image:url("../k1/sz_bg_service_02.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.img_125_3{
+    height:56px;
+    background-image:url("../k1/sz_bg_service_03.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.img_125_4{
+    height:56px;
+    background-image:url("../k1/sz_bg_service_04.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
+/*图片过渡*/
+.img_transition_f{
+    position: relative;
+}
+.img_transition_s1{
+    position: absolute;
+    top:0px;
+    left:50px;
+}
+.img_transition_s2{
+    position: absolute;
+    top:10px;
+    left:0px;
+}
+/*精灵图*/
+.dd_bg{
+    background-image: url("../k1/service_01.png");
+}
+.bg_position1{
+    width: 540px;
+    height: 110px;
+    background-position:-4px -1045px;
+}
+.bg_position2{
+    width: 360px;
+    height: 300px;
+    background-position:-360px -753px;
+}
+.bg_position3{
+    width: 360px;
+    height: 290px;
+    background-position:-360px -440px;
+}
+.bg_position4{
+    width: 360px;
+    height: 300px;
+    background-position:0px -740px;
+}
+.bg_position5{
+    width: 360px;
+    height: 310px;
+    background-position:10px -420px;
+}
+.bg2{
+    background: #f8f9fa;
+}
