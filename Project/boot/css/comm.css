@@ -42,7 +42,7 @@
     background-color: #ffffff;
     border-radius: 50%;
     margin-right: 6px;
-    margin-lift: 6px;
+    margin-left: 6px;
 }
 /*3.指示器背景*/
 .carousel-indicators .active{
@@ -56,11 +56,12 @@
 /*背景图*/
 .img_960{
     height:500px;
-    background-image:url("../k1/courier_app1.png");
+    background-image:url("../k1/img/courier_app1.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
-/* .img_125_1{
+/* 
+.img_125_1{
     height:56px;
     background-image:url("../k1/sz_bg_service_01.png");
     background-repeat: no-repeat;
@@ -100,7 +101,7 @@
 }
 /*精灵图*/
 .dd_bg{
-    background-image: url("../k1/service_01.png");
+    background-image: url("../k1/img/service_01.png");
 }
 .bg_position1{
     width: 540px;
@@ -129,4 +130,19 @@
 }
 .bg2{
     background: #f8f9fa;
+}
+/*图片过渡显示*/
+
+/*按钮位置浮动*/
+.img_transition_s3{
+    position: absolute;
+    top:150px;
+    left:300px;
+}
+.bg3{
+    background: #f7f8fa;
+}
+/*字号大小*/
+._rem{
+    font-size: 0.9rem;
 }
