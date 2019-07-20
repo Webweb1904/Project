@@ -146,3 +146,46 @@
 ._rem{
     font-size: 0.9rem;
 }
+/**/
+.img_transition_s4{
+    position: absolute;
+    top:100px;
+    left:220px;
+}
+.img_transition_s5{
+    position: absolute;
+    top:205px;
+    left:260px;
+}
+.b-radius{
+    border-radius:5rem;
+}
+/*①②③*/
+.span_bg{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 28px;
+    background: url("../k1/img/sec03_circle.png") center center no-repeat;
+    background-size: 100% 100%;
+}
+/*阴影*/
+.blue_box-shadow{
+    width:266px;
+    height:266px;
+    box-shadow:  0px 0px 40px 0px rgba(0,102,255,0.1);
+}
+/*hover*/
+.bg_transition{
+    width: 606px;
+    height: 300px;
+    display: block;
+    background: url("../k1/img/sec04_01.png");
+}
+.img_transition_s6{
+    position: absolute;
+    top:140px;
+    left:350px;
+}
