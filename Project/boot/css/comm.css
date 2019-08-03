@@ -194,3 +194,63 @@
     width: 220px;
     height: 198px;
 }
+/*边框*/
+.border_1{
+    border: 1px solid #317EE7;
+}
+.transition_s7{
+    position: absolute;
+    top:-20px;
+    left:391px;
+}
+/*10张图*/
+.img_5_1{
+    width: 53px;
+    height: 53px;
+}
+.img_5_2{
+    width: 170px;
+    height: 37px;
+}
+.img_5_3{
+    width: 131px;
+    height: 32px;
+}
+.img_5_4{
+    width: 164px;
+    height: 53px;
+}
+.img_5_5{
+    width: 55px;
+    height: 67px;
+}
+.img_5_6{
+    width: 110px;
+    height: 40px;
+}
+.img_5_7{
+    width: 202px;
+    height: 25px;
+}
+.img_5_8{
+    width: 235px;
+    height: 84px;
+}
+.img_5_9{
+    width: 86px;
+    height: 66px;
+}
+.img_5_10{
+    width: 205px;
+    height: 31px;
+}
+/*6图大小*/
+.img_w_h{
+    width: 289px;
+    height: 252px;
+}
+/*6---背景*/
+.bg_6{
+    background: url("../k1/img/bg_blue_gradient.png");
+    background-size: 100%;
+}
