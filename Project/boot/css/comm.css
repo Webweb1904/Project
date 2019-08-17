@@ -262,3 +262,8 @@
     width: 168px;
     height: 168px;
 }
+.transition_s8{
+    position: absolute;
+    top:100px;
+    left:150px;
+}
