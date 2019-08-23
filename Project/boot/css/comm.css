@@ -91,13 +91,15 @@
 }
 .img_transition_s1{
     position: absolute;
-    top:0px;
+    z-index: 1;
     left:50px;
 }
 .img_transition_s2{
     position: absolute;
-    top:10px;
-    left:0px;
+    z-index: -11;
+}
+.h-w{
+    height: 450px;
 }
 /*精灵图*/
 .dd_bg{

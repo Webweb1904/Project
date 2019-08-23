@@ -1,0 +1,58 @@
+#a1_1 div{
+    list-style: none;
+    display: none;
+}
+#a1_1:hover div{
+    list-style: none;
+    margin-top: 20px;
+    background: #fff;
+    width: 80px;
+    padding-left: 7px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 10;
+    display: block;
+}
+#a1_1:hover div a{
+    display: block;
+}
+#a2_2 div{
+    list-style: none;
+    display: none;
+}
+#a2_2:hover div{
+    list-style: none;
+    margin-top: 20px;
+    background: #fff;
+    text-align: center;
+    width: 130px;
+    padding-left: 5px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 10;
+    display: block;
+}
+#a2_2:hover div a{
+    display: block;
+}
+#d1:hover{
+    z-index: -20;
+}
+.transition1{
+    transition:all 1s ease-out 0s;
+}
+.transition1:hover{
+    transform:scale(1.1);
+}
+.transition2{
+    transition:all 1s ease-out 0s;
+}
+.transition2:hover{
+    transform:scale(1.2);
+}
+.transition3{
+    transition:all 1s ease-out 0s;
+}
+.transition3:hover{
+    transform:scale(1.13);
+}

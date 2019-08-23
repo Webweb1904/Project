@@ -10,6 +10,32 @@
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../css/comm.css">
+    <style>
+        #a1_1 div{
+            list-style: none;
+            display: none;
+        }
+        #a1_1:hover div{
+            list-style: none;
+            margin-top: 20px;
+            display: block;
+        }
+        #a1_1:hover div a{
+            display: block;
+        }
+        #a2_2 div{
+            list-style: none;
+            display: none;
+        }
+        #a2_2:hover div{
+            list-style: none;
+            margin-top: 20px;
+            display: block;
+        }
+        #a2_2:hover div a{
+            display: block;
+        }
+    </style>
 </head>
 <body>
 <div class="container">
@@ -19,32 +45,35 @@
             <li class="mr-5">
                 <h2><span class="text-primary font1">快递</span><span class="text-warning font1">100</span></h2>
             </li>
-            <li class="mr-5 pt-2">
-                <select name="" id="" class="border-0 bg-transparent">
-                    <option value=""><a href="index.html">查快递</a></option>
-                    <option value=""><a href="">快递大全</a></option>
-                    <option value=""><a href="">快递网点</a></option>
-                    <option value=""><a href="">时效查询</a></option>
-                </select>
+            <li class="mr-5 pt-2" id="a1_1">
+                <a href="./index.html" class="text-dark">查快递</a>
+                <div>
+                    <a href="#" class="text-dark">快递大全</a>
+                    <a href="#" class="text-dark">快递网点</a>
+                    <a href="#" class="text-dark">时效查询</a>
+                </div>
             </li>
             <li class="mr-5 pt-2">
-                <a href="second.html" class="text-dark">寄快递</a>
+                <a href="./second.html" class="text-dark">寄快递</a>
             </li>
             <li class="mr-5 pt-2">
-                <a href="third.html" class="text-dark">企业服务</a>
+                <a href="./third.html" class="text-dark">企业服务</a>
+            </li>
+            <li class="mr-5 pt-2" id="a2_2">
+                <a href="./fourth.html" class="text-dark">快递接口</a>
+                <div>
+                    <a href="#" class="text-dark">接口申请</a>
+                    <a href="#" class="text-dark">技术文档</a>
+                    <a href="#" class="text-dark">常见问题</a>
+                    <a href="#" class="text-dark">快递公司入驻</a>
+                    <a href="#" class="text-dark">页面嵌入</a>
+                </div>
             </li>
             <li class="mr-5 pt-2">
-                <select name="" id="" class="border-0 bg-transparent">
-                    <option value=""><a href="fourth.html">快递接口(API)</a></option>
-                    <option value=""><a href="">接口申请</a></option>
-                    <option value=""><a href="">技术文档</a></option>
-                    <option value=""><a href="">常见问题</a></option>
-                    <option value=""><a href="">快递公司入驻</a></option>
-                    <option value=""><a href="">页面嵌入</a></option>
-                </select>
+                <a href="./fifth_1.html" class="text-dark">云打印</a>
             </li>
-            <li class="mr-5 pt-2">
-                <a href="" class="text-dark">云打印</a>
+            <li class=" pt-2">
+                <a href="./sixth_1.html" class="text-dark">快递员端</a>
             </li>
         </ul>
         <ul class="breadcrumb bg-transparent pt-2">

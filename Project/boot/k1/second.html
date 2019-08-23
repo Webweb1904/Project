@@ -1,52 +1,103 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title></title>
     <!-- 引入4个文件，必须注意导入顺序-->
-    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.css" />
     <script src="../js/jquery.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../css/comm.css">
+    <link rel="stylesheet" href="../css/hover.css">
 </head>
+
 <body>
-<!--头部-->
-<header>
+    <!--头部-->
+    <!-- <header>
     <iframe src="header.html" frameborder="0" scrolling="no" class="w-100"></iframe>
-</header>
-<div class="container">
-    <!-- 1.图片 -->
-    <div>
-        <img src="img/courier_map.png" alt="" class="w-100">
-    </div>
-    <!-- 2.标记 -->
-    <div class="row text-center my-4">
-        <div class="col-4">
-            <img src="img/微信图片_20190704101713.png" alt="">
-            <h3>快速</h3>
-            <p class="text-secondary">即时响应，1小时内上门取件</p>
+</header> -->
+    <div class="container">
+        <header>
+            <div class="d-flex justify-content-around mt-4 bg-white">
+                <ul class="list-unstyled d-flex justify-content-around">
+                    <li class="mr-5">
+                        <h2><span class="text-primary font1">快递</span><span class="text-warning font1">100</span></h2>
+                    </li>
+                    <li class="mr-5 pt-2" id="a1_1">
+                        <a href="./index.html" class="text-dark">查快递</a>
+                        <div>
+                            <a href="#" class="text-dark">快递大全</a>
+                            <a href="#" class="text-dark">快递网点</a>
+                            <a href="#" class="text-dark">时效查询</a>
+                        </div>
+                    </li>
+                    <li class="mr-5 pt-2">
+                        <a href="./second.html" class="text-dark">寄快递</a>
+                    </li>
+                    <li class="mr-5 pt-2">
+                        <a href="./third.html" class="text-dark">企业服务</a>
+                    </li>
+                    <li class="mr-5 pt-2" id="a2_2">
+                        <a href="./fourth.html" class="text-dark">快递接口</a>
+                        <div>
+                            <a href="#" class="text-dark">接口申请</a>
+                            <a href="#" class="text-dark">技术文档</a>
+                            <a href="#" class="text-dark">常见问题</a>
+                            <a href="#" class="text-dark">快递公司入驻</a>
+                            <a href="#" class="text-dark">页面嵌入</a>
+                        </div>
+                    </li>
+                    <li class="mr-5 pt-2">
+                        <a href="./fifth_1.html" class="text-dark">云打印</a>
+                    </li>
+                    <li class=" pt-2">
+                        <a href="./sixth_1.html" class="text-dark">快递员端</a>
+                    </li>
+                </ul>
+                <ul class="breadcrumb bg-transparent pt-2">
+                    <li class="breadcrumb-item">
+                        <a href="#" class="text-dark">注册</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#" class="text-dark">登录</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- 1.图片 -->
+        <div>
+            <img src="img/courier_map.png" alt="" class="w-100">
         </div>
-        <div class="col-4">
-            <img src="img/微信图片_20190704101713.png" alt="">
-            <h3>透明</h3>
-            <p class="text-secondary">严格按行业标准计费，明细清晰</p>
+        <!-- 2.标记 -->
+        <div class="row text-center my-4">
+            <div class="col-4">
+                <img src="img/微信图片_20190704101713.png" alt="" class=" transition3">
+                <h3>快速</h3>
+                <p class="text-secondary">即时响应，1小时内上门取件</p>
+            </div>
+            <div class="col-4">
+                <img src="img/微信图片_20190704101713.png" alt="" class=" transition3">
+                <h3>透明</h3>
+                <p class="text-secondary">严格按行业标准计费，明细清晰</p>
+            </div>
+            <div class="col-4">
+                <img src="img/微信图片_20190704101713.png" alt="" class=" transition3">
+                <h3>放心</h3>
+                <p class="text-secondary">全程无纸化操作，手机实时掌控</p>
+            </div>
         </div>
-        <div class="col-4">
-            <img src="img/微信图片_20190704101713.png" alt="">
-            <h3>放心</h3>
-            <p class="text-secondary">全程无纸化操作，手机实时掌控</p>
+        <!-- 3.二维码 -->
+        <div class="img_960 text-center">
+            <img src="img/app_code.png" alt="" style="margin-top:100px">
         </div>
     </div>
-    <!-- 3.二维码 -->
-    <div class="img_960 text-center">
-       <img src="img/app_code.png" alt="" style="margin-top:100px">
-    </div>
-</div>
-<!--脚部-->
-<footer>
-    <iframe src="footer.html" frameborder="0" scrolling="no" class="w-100 f_height"></iframe>
-</footer>
+    <!--脚部-->
+    <footer>
+        <iframe src="footer.html" frameborder="0" scrolling="no" class="w-100 f_height"></iframe>
+    </footer>
 </body>
+
 </html>

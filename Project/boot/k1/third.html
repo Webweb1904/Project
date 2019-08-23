@@ -1,217 +1,330 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title></title>
     <!-- 引入4个文件，必须注意导入顺序-->
-    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.css" />
     <script src="../js/jquery.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../css/comm.css">
+    <link rel="stylesheet" href="../css/hover.css">
 </head>
+
 <body>
-<!--头部-->
-<header>
+    <!--头部-->
+    <!-- <header>
     <iframe src="header.html" frameborder="0" scrolling="no" class="w-100"></iframe>
-</header>
-<div class="container">
-    <!-- 1.图片 -->
-    <div>
-        <img src="img/sz_bg_service_01.png" alt="" class="w-100">
-        <img src="img/sz_bg_service_02.png" alt="" class="w-100">
-        <img src="img/sz_bg_service_03.png" alt="" class="w-100">
-        <img src="img/sz_bg_service_04.png" alt="" class="w-100">
-    </div>
-    <div class="row mt-5">
-        <!-- 1 -->
-        <div class="col-6">
-            <dt><h5 class="font-weight-bold">对管理员</h5>
+</header> -->
+    <div class="container">
+        <header>
+            <div class="d-flex justify-content-around mt-4 bg-white">
+                <ul class="list-unstyled d-flex justify-content-around">
+                    <li class="mr-5">
+                        <h2><span class="text-primary font1">快递</span><span class="text-warning font1">100</span></h2>
+                    </li>
+                    <li class="mr-5 pt-2" id="a1_1">
+                        <a href="./index.html" class="text-dark">查快递</a>
+                        <div>
+                            <a href="#" class="text-dark">快递大全</a>
+                            <a href="#" class="text-dark">快递网点</a>
+                            <a href="#" class="text-dark">时效查询</a>
+                        </div>
+                    </li>
+                    <li class="mr-5 pt-2">
+                        <a href="./second.html" class="text-dark">寄快递</a>
+                    </li>
+                    <li class="mr-5 pt-2">
+                        <a href="./third.html" class="text-dark">企业服务</a>
+                    </li>
+                    <li class="mr-5 pt-2" id="a2_2">
+                        <a href="./fourth.html" class="text-dark">快递接口</a>
+                        <div>
+                            <a href="#" class="text-dark">接口申请</a>
+                            <a href="#" class="text-dark">技术文档</a>
+                            <a href="#" class="text-dark">常见问题</a>
+                            <a href="#" class="text-dark">快递公司入驻</a>
+                            <a href="#" class="text-dark">页面嵌入</a>
+                        </div>
+                    </li>
+                    <li class="mr-5 pt-2">
+                        <a href="./fifth_1.html" class="text-dark">云打印</a>
+                    </li>
+                    <li class=" pt-2">
+                        <a href="./sixth_1.html" class="text-dark">快递员端</a>
+                    </li>
+                </ul>
+                <ul class="breadcrumb bg-transparent pt-2">
+                    <li class="breadcrumb-item">
+                        <a href="#" class="text-dark">注册</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#" class="text-dark">登录</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- 1.图片 -->
+        <div>
+            <img src="img/sz_bg_service_01.png" alt="" class="w-100">
+            <img src="img/sz_bg_service_02.png" alt="" class="w-100">
+            <img src="img/sz_bg_service_03.png" alt="" class="w-100">
+            <img src="img/sz_bg_service_04.png" alt="" class="w-100">
+        </div>
+        <div class="row mt-5">
+            <!-- 1 -->
+            <div class="col-6 mt-5 h-w">
+                <dt>
+                    <h5 class="font-weight-bold">对管理员</h5>
                 <dd>统一管理员工寄件信息，智能分摊物流费用。</dd>
-            </dt>
-            <hr>
-            <dt><h5 class="font-weight-bold">对于员工</h5>
+                </dt>
+                <hr>
+                <dt>
+                    <h5 class="font-weight-bold">对于员工</h5>
                 <dd>无需手写面单，高效批量处理订单，实时跟踪物流最新状态。</dd>
-            </dt>
-            <a href="" class="btn btn-warning px-5 py-3"><span class="text-white h4">立即免费体验</span></a>
-        </div>
-        <div class="col-6 img_transition_f">
-            <div class=" img_transition_s1" id="d1">
-                <img src="img/service_admin.png" alt="">
+                </dt>
+                <a href="" class="btn btn-warning px-5 py-3"><span class="text-white h4">立即免费体验</span></a>
             </div>
-            <div class="mt-3" id="d2">
-                <img src="img/service_staff.png" alt="">
+            <div class="col-6 img_transition_f mb-5 h-w" id="d1d2">
+                <div class="img_transition_s1" id="d1">
+                    <img src="img/service_admin.png" alt="" id="img_d1">
+                </div>
+                <div class="mt-3 img_transition_s2" id="d2">
+                    <img src="img/service_staff.png" alt="" id="img_d2">
+                </div>
             </div>
-        </div>
-        <!-- 2 -->
-        <div class="col-6 bg2">
-            <div class="mt-5 ml-5">
-                <p class="h4 text-primary font-weight-bold">批量打印快递单</p>
-                <p class="h5 py-2">一键批量打印快递单，财务人员工作效率提升90%</p>
-                <div class="dd_bg bg_position1"></div>
+            <!-- 2 -->
+            <div class="col-6 bg2">
+                <div class="mt-5 ml-5">
+                    <p class="h4 text-primary font-weight-bold">批量打印快递单</p>
+                    <p class="h5 py-2">一键批量打印快递单，财务人员工作效率提升90%</p>
+                    <div class="dd_bg bg_position1"></div>
+                </div>
             </div>
-        </div>
-        <div class="col-6 bg2">
-            <div class=" dd_bg bg_position2 ml-5"></div>
-        </div>
-        <!-- 3 -->
-        <div class="col-6 mt-5">
-            <div class=" dd_bg bg_position3 ml-5"></div>
-        </div>
-        <div class="col-6 mt-5">
-            <div class="mt-5">
-                <p class="h4 text-primary font-weight-bold">授权子账户管理</p>
-                <p class="h5 py-2">员工可通过子账户管理快递单，再汇集到企业账户</p>
-                <p>* 支持审核功能，避免私人件当做公司件</p>
-                <p>* 员工统一使用月结账户，方便结算与报销</p>
+            <div class="col-6 bg2">
+                <div class=" dd_bg bg_position2 ml-5"></div>
             </div>
-        </div>
-        <!-- 4 -->
-        <div class="col-6 bg2 mt-5">
-            <div class="mt-5 ml-5">
-                <p class="h4 text-primary font-weight-bold">电子化对账</p>
-                <p class="h5 py-2">寄件数据电子化，方便公司内部费用分摊及对账</p>
-                <p>* 账单清晰明了，费用归属到对应部门，无需再人工核对分摊费用</p>
-                <p>* 与快递公司自动对账，多算的费用无处遁形</p>
+            <!-- 3 -->
+            <div class="col-6 mt-5">
+                <div class=" dd_bg bg_position3 ml-5"></div>
             </div>
-        </div>
-        <div class="col-6 bg2 mt-5">
-            <div class="dd_bg bg_position4 mr-5"></div>
-        </div>
-        <!-- 5 -->
-        <div class="col-6 mt-5">
-            <div class="dd_bg bg_position5 ml-5"></div>
-        </div>
-        <div class="col-6 mt-5">
-            <div class="mt-5 ml-5">
-                <p class="h4 text-primary font-weight-bold">内部OA系统集成</p>
-                <p class="h5 py-2">定制一个专属寄件页面，嵌入你的内部办公系统</p>
-                <p>* 通过便捷的专属寄件链接，嵌入到您的微信公众号菜单</p>
-                <p>* 通过开放的API接口集成到您企业内部系统或ERP</p>
+            <div class="col-6 mt-5">
+                <div class="mt-5">
+                    <p class="h4 text-primary font-weight-bold">授权子账户管理</p>
+                    <p class="h5 py-2">员工可通过子账户管理快递单，再汇集到企业账户</p>
+                    <p>* 支持审核功能，避免私人件当做公司件</p>
+                    <p>* 员工统一使用月结账户，方便结算与报销</p>
+                </div>
             </div>
-        </div>
-        <!-- 6 -->
-        <div class="col-12 text-center bg2">
-            <h1 class="my-5">企业与职场人的共同选择</h1>
-            <img src="img/service_02.png" alt="" class="mb-5">
-        </div>
-        <!-- 7 -->
-        <div class="col-12 text-center mt-5 mb-3">
-            <h1 class="mb-5">现在，启用您的快递管家</h1>
-            <table border="1px" align="center">
-                <tr class="bg2">
-                    <td></td>
-                    <td>
-                        <h4 class="mt-4">标准版</h4>
-                        <a href="#" class="btn btn-warning py-2 px-5 mx-4 my-4"><h4 class="text-white">免费使用</h4></a>
-                    </td>
-                    <td>
-                        <h4 class="mt-4">专业版</h4>
-                        <a href="#" class="btn btn-warning py-2 px-5 mx-4 my-4"><h4 class="text-white">立即购买</h4></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><h3 class="text-warning font-weight-bold">0元</h3></td>
-                    <td><h3 class="text-warning font-weight-bold">365元/年</h3></td>
-                </tr>
-                <tr>
-                    <td>在线打印快递面单</td>
-                    <td class="text-info"><h3>√</h3></td>
-                    <td class="text-info"><h3>√</h3></td>
-                </tr>
-                <tr>
-                    <td>打印面单去广告</td>
-                    <td></td>
-                    <td class="text-info"><h3>√</h3></td>
-                </tr>
-                <tr>
-                    <td>支持网点及菜鸟电子面单</td>
-                    <td class="text-info"><h3>√</h3></td>
-                    <td class="text-info"><h3>√</h3></td>
-                </tr>
-                <tr>
-                    <td>收寄件地址薄管理</td>
-                    <td class="text-info"><h3>√</h3></td>
-                    <td class="text-info"><h3>√</h3></td>
-                </tr>
-                <tr>
-                    <td>专属查询页，手机号查快递<a href="#">了解更多</a></td>
-                    <td class="text-info"><h3>√</h3></td>
-                    <td class="text-info"><h3>√</h3></td>
-                </tr>
-                <tr>
-                    <td>专属查询页内容可定制</td>
-                    <td></td>
-                    <td class="text-info"><h3>√</h3></td>
-                </tr>
-                <tr>
-                    <td>专属寄件页，可创建自己的下单入口</td>
-                    <td class="text-info"><h3>√</h3></td>
-                    <td class="text-info"><h3>√</h3></td>
-                </tr>
-                <tr>
-                    <td>专属寄件页内容可定制</td>
-                    <td class="text-info"><h3>√</h3></td>
-                    <td class="text-info"><h3>√</h3></td>
-                </tr>
-                <tr>
-                    <td>智能跟踪快递状态</td>
-                    <td class="text-info"><h3>√</h3></td>
-                    <td class="text-info"><h3>√</h3></td>
-                </tr>
-                <tr>
-                    <td>异常状态订单导出</td>
-                    <td class="text-info"><h3>√</h3></td>
-                    <td class="text-info"><h3>√</h3></td>
-                </tr>
-                <tr>
-                    <td>自动短信提醒</td>
-                    <td class="text-info"><h3>√</h3></td>
-                    <td class="text-info"><h3>√</h3></td>
-                </tr>
-                <tr>
-                    <td>订单导入API接口<a href="#">了解更多</a></td>
-                    <td></td>
-                    <td class="text-info"><h3>√</h3></td>
-                </tr>
-                <tr>
-                    <td>月度账单管理</td>
-                    <td></td>
-                    <td class="text-info"><h3>√</h3></td>
-                </tr>
-                <tr>
-                    <td>高级管理权限</td>
-                    <td></td>
-                    <td class="text-info"><h3>√</h3></td>
-                </tr>
-                <tr>
-                    <td>支持子账户数（各个部门可通过子账户独立管理寄件数据，并与公司账号打通）</td>
-                    <td class="text-info">1个</td>
-                    <td class="text-info">3个(可扩展,需另购)</td>
-                </tr>
-                <tr>
-                    <td>电话支持（工作日）</td>
-                    <td></td>
-                    <td class="text-info"><h3>√</h3></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <a href="#" class="btn btn-warning py-2 px-5 mx-4 my-4"><h4 class="text-white">免费使用</h4></a>
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-warning py-2 px-5 mx-4 my-4"><h4 class="text-white">立即购买</h4></a>
-                    </td>
-                </tr>
-            </table>
+            <!-- 4 -->
+            <div class="col-6 bg2 mt-5">
+                <div class="mt-5 ml-5">
+                    <p class="h4 text-primary font-weight-bold">电子化对账</p>
+                    <p class="h5 py-2">寄件数据电子化，方便公司内部费用分摊及对账</p>
+                    <p>* 账单清晰明了，费用归属到对应部门，无需再人工核对分摊费用</p>
+                    <p>* 与快递公司自动对账，多算的费用无处遁形</p>
+                </div>
+            </div>
+            <div class="col-6 bg2 mt-5">
+                <div class="dd_bg bg_position4 mr-5"></div>
+            </div>
+            <!-- 5 -->
+            <div class="col-6 mt-5">
+                <div class="dd_bg bg_position5 ml-5"></div>
+            </div>
+            <div class="col-6 mt-5">
+                <div class="mt-5 ml-5">
+                    <p class="h4 text-primary font-weight-bold">内部OA系统集成</p>
+                    <p class="h5 py-2">定制一个专属寄件页面，嵌入你的内部办公系统</p>
+                    <p>* 通过便捷的专属寄件链接，嵌入到您的微信公众号菜单</p>
+                    <p>* 通过开放的API接口集成到您企业内部系统或ERP</p>
+                </div>
+            </div>
+            <!-- 6 -->
+            <div class="col-12 text-center bg2">
+                <h1 class="my-5">企业与职场人的共同选择</h1>
+                <img src="img/service_02.png" alt="" class="mb-5">
+            </div>
+            <!-- 7 -->
+            <div class="col-12 text-center mt-5 mb-3">
+                <h1 class="mb-5">现在，启用您的快递管家</h1>
+                <table border="1px" align="center">
+                    <tr class="bg2">
+                        <td></td>
+                        <td>
+                            <h4 class="mt-4">标准版</h4>
+                            <a href="#" class="btn btn-warning py-2 px-5 mx-4 my-4">
+                                <h4 class="text-white">免费使用</h4>
+                            </a>
+                        </td>
+                        <td>
+                            <h4 class="mt-4">专业版</h4>
+                            <a href="#" class="btn btn-warning py-2 px-5 mx-4 my-4">
+                                <h4 class="text-white">立即购买</h4>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <h3 class="text-warning font-weight-bold">0元</h3>
+                        </td>
+                        <td>
+                            <h3 class="text-warning font-weight-bold">365元/年</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>在线打印快递面单</td>
+                        <td class="text-info">
+                            <h3>√</h3>
+                        </td>
+                        <td class="text-info">
+                            <h3>√</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>打印面单去广告</td>
+                        <td></td>
+                        <td class="text-info">
+                            <h3>√</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>支持网点及菜鸟电子面单</td>
+                        <td class="text-info">
+                            <h3>√</h3>
+                        </td>
+                        <td class="text-info">
+                            <h3>√</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>收寄件地址薄管理</td>
+                        <td class="text-info">
+                            <h3>√</h3>
+                        </td>
+                        <td class="text-info">
+                            <h3>√</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>专属查询页，手机号查快递<a href="#">了解更多</a></td>
+                        <td class="text-info">
+                            <h3>√</h3>
+                        </td>
+                        <td class="text-info">
+                            <h3>√</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>专属查询页内容可定制</td>
+                        <td></td>
+                        <td class="text-info">
+                            <h3>√</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>专属寄件页，可创建自己的下单入口</td>
+                        <td class="text-info">
+                            <h3>√</h3>
+                        </td>
+                        <td class="text-info">
+                            <h3>√</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>专属寄件页内容可定制</td>
+                        <td class="text-info">
+                            <h3>√</h3>
+                        </td>
+                        <td class="text-info">
+                            <h3>√</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>智能跟踪快递状态</td>
+                        <td class="text-info">
+                            <h3>√</h3>
+                        </td>
+                        <td class="text-info">
+                            <h3>√</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>异常状态订单导出</td>
+                        <td class="text-info">
+                            <h3>√</h3>
+                        </td>
+                        <td class="text-info">
+                            <h3>√</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>自动短信提醒</td>
+                        <td class="text-info">
+                            <h3>√</h3>
+                        </td>
+                        <td class="text-info">
+                            <h3>√</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>订单导入API接口<a href="#">了解更多</a></td>
+                        <td></td>
+                        <td class="text-info">
+                            <h3>√</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>月度账单管理</td>
+                        <td></td>
+                        <td class="text-info">
+                            <h3>√</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>高级管理权限</td>
+                        <td></td>
+                        <td class="text-info">
+                            <h3>√</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>支持子账户数（各个部门可通过子账户独立管理寄件数据，并与公司账号打通）</td>
+                        <td class="text-info">1个</td>
+                        <td class="text-info">3个(可扩展,需另购)</td>
+                    </tr>
+                    <tr>
+                        <td>电话支持（工作日）</td>
+                        <td></td>
+                        <td class="text-info">
+                            <h3>√</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <a href="#" class="btn btn-warning py-2 px-5 mx-4 my-4">
+                                <h4 class="text-white">免费使用</h4>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-warning py-2 px-5 mx-4 my-4">
+                                <h4 class="text-white">立即购买</h4>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
-</div>
-<!--脚部-->
-<footer>
-    <iframe src="footer.html" frameborder="0" scrolling="no" class="w-100 f_height"></iframe>
-</footer>
+    <!--脚部-->
+    <footer>
+        <iframe src="footer.html" frameborder="0" scrolling="no" class="w-100 f_height"></iframe>
+    </footer>
 </body>
+
 </html>
